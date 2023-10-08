@@ -1,6 +1,6 @@
 const navbar = () => {
     return (
-        <div className='fixed font-medium w-full h-14 bg-white flex bg-gray-500 justify-start items-center px-8 text-xs text-zinc-950'>
+        <div className='z-50 fixed font-medium w-full h-14 bg-white flex bg-gray-500 justify-start items-center px-8 text-xs text-zinc-950'>
             <div className="brand w-min p-2 text-2xl">RECYCLE</div>
             <ul className="flex w-auto mx-5">
                 <li>LAYANAN</li>
