@@ -2,26 +2,40 @@ import React from 'react'
 
 const layanan = () => {
     return (
-        <div className="relative mx-auto bg-white p-12 h-80 w-11/12 rounded -mt-28 mb-32 flex justify-around shadow-xl">
-            <div className="home-features__item border rounded p-2">
-                <img width="220" height="120" loading="lazy" className="home-features__image rounded" src="https://images.unsplash.com/photo-1696509528129-c28dc0308733?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-                <h2 className="home-features__title mt-4 text-center">
-                    Pick Up
-                </h2>
+        <>
+            {/* Container for demo purpose */}
+            <div className="container my-24 mx-auto md:px-6">
+                {/* Section: Design Block */}
+                <section className="mb-32 text-center">
+                    <div className="grid lg:grid-cols-3 lg:gap-x-12 gap-8">
+                        <div className="mb-16 lg:mb-0 h-64 min-h-full">
+                            <div className="flex justify-center items-center h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                <h3 className="text-2xl font-bold text-primary dark:text-primary-400">
+                                    Pick Up
+                                </h3>
+                            </div>
+                        </div>
+                        <div className="mb-16 lg:mb-0 h-64 min-h-full">
+                            <div className="flex justify-center items-center h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                <h3 className="text-2xl font-bold text-primary dark:text-primary-400">
+                                    Drop Off
+                                </h3>
+                            </div>
+                        </div>
+                        <div className="mb-16 lg:mb-0 h-64 min-h-full">
+                            <div className="flex justify-center items-center h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                <h3 className="text-2xl font-bold text-primary dark:text-primary-400">
+                                    Reward
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Section: Design Block */}
             </div>
-            <div className="home-features__item border rounded p-2">
-                <img width="220" height="120" loading="lazy" className="home-features__image rounded" src="https://images.unsplash.com/photo-1696509528129-c28dc0308733?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-                <h2 class="home-features__title mt-4 text-center">
-                    Drop Off
-                </h2>
-            </div>
-            <div className="home-features__item border rounded p-2">
-                <img width="220" height="120" loading="lazy" className="home-features__image rounded" src="https://images.unsplash.com/photo-1696509528129-c28dc0308733?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-                <h2 class="home-features__title mt-4 text-center">
-                    Reward
-                </h2>
-            </div>
-        </div>
+            {/* Container for demo purpose */}
+        </>
+
     )
 }
 
