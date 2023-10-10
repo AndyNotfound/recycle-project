@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <>
-            <div className='h-custom bg-sky-500 text-white px-14 pt-44'>
+            <div className='h-custom bg-sky-500 text-white px-14 pt-32'>
                 <div className="grid items-center lg:grid-cols-2 lg:gap-x-12">
                     <div className="mb-12 lg:mb-0">
                         <h2 className="my-12 text-5xl font-bold leading-tight tracking-tight">
