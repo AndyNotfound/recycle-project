@@ -1,7 +1,7 @@
 const navbar = () => {
     return (
         <>
-            <nav className="z-50 font-medium h-14 text-xs border flex-no-wrap fixed flex w-full items-center justify-between bg-white dark:bg-neutral-600 lg:flex-wrap lg:justify-start px-8">
+            <nav className="z-40 font-medium h-14 text-xs border flex-no-wrap fixed flex w-full items-center justify-between bg-white dark:bg-neutral-600 lg:flex-wrap lg:justify-start px-8">
                 <div className="flex w-full flex-wrap items-center justify-between">
                     <button
                         className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"

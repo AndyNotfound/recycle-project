@@ -1,10 +1,10 @@
 const Hero = () => {
     return (
         <>
-            <div className='h-custom bg-sky-500 text-white px-14 pt-32'>
+            <div className='h-120vh bg-sky-500 text-white px-14 pb-32 relative top-14 flex'>
                 <div className="grid items-center lg:grid-cols-2 lg:gap-x-12">
                     <div className="mb-12 lg:mb-0">
-                        <h2 className="my-12 text-5xl font-bold leading-tight tracking-tight">
+                        <h2 className="mb-12 text-5xl font-bold leading-tight tracking-tight">
                             Platform Unggulan <br />
                             <span className="text-success dark:text-success-400">
                                 Untuk Distribusi Sampah
@@ -14,8 +14,8 @@ const Hero = () => {
                             Berkolaborasi dengan yang lain. Memamerkan usaha Anda. Membeli dan <br></br>
                             menjual model pengelolaan sampah.</p>
                         <div className="button-container flex justify-end w-min text-white">
-                            <button className="w-24 mr-1  h-11 px-4 bg-cyan-400 rounded">REGISTER</button>
-                            <button className="w-24 h-11 px-4 bg-yellow-400 rounded">LOGIN</button>
+                            <button className="w-40 mr-1  h-11 px-4 bg-cyan-400 rounded">JOIN FOR FREE</button>
+                            <button className="w-40 h-11 px-4 bg-yellow-400 rounded">SEE PLANS</button>
                         </div>
                     </div>
                     <div className="mb-12 lg:mb-0">
@@ -23,8 +23,46 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </>
+            <div className="h-64 container bg-white border rounded my-24 mx-auto md:p-8 relative md:-mt-12">
+                {/* Section: Design Block */}
+                <section className="text-center h-full">
+                    <div className="h-full grid lg:grid-cols-3 lg:gap-x-12 gap-8">
+                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
+                            <div className="p-6 flex items-center justify-center">
+                                <div className='mb-4'>
 
+                                </div>
+                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                                    Drop Off
+                                </h5>
+                            </div>
+                        </div>
+                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
+                            <div className="p-6 flex items-center justify-center">
+                                <div className='mb-4'>
+
+                                </div>
+                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                                    Pick Up
+                                </h5>
+                            </div>
+                        </div>
+                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left rounded">
+                            <div className="p-6 flex items-center justify-center">
+                                <div className='mb-4'>
+
+                                </div>
+                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                                    Reward
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Section: Design Block */}
+            </div>
+            {/* Container for demo purpose */}
+        </>
     )
 }
 
