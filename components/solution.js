@@ -4,7 +4,7 @@ const Solution = () => {
     return (
         <>
             <div className="bg-white w-screen md:p-6">
-                <section className="my-32">
+                <section className="my-24">
                     <h2 className="text-5xl text-blue-500 font-bold leading-tight tracking-tight text-center">
                         SOLUSI KAMI
                     </h2>
@@ -16,7 +16,7 @@ const Solution = () => {
                                     <a href="#!">
                                         <img
                                             className="rounded-lg"
-                                            src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                                            src="assets/11.svg"
                                             alt=""
                                         />
                                     </a>
@@ -40,7 +40,7 @@ const Solution = () => {
                                     <a href="#!">
                                         <img
                                             className="rounded-lg"
-                                            src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                                            src="assets/12.svg"
                                             alt=""
                                         />
                                     </a>
@@ -63,7 +63,7 @@ const Solution = () => {
                                     <a href="#!">
                                         <img
                                             className="rounded-lg"
-                                            src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                                            src="assets/13.svg"
                                             alt=""
                                         />
                                     </a>

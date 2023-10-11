@@ -18,19 +18,19 @@ const Hero = () => {
                             <button className="w-40 h-11 px-4 bg-yellow-400 rounded">SEE PLANS</button>
                         </div>
                     </div>
-                    <div className="mb-12 lg:mb-0">
-
+                    <div className="mb-12 lg:mb-0 flex justify-end">
+                        <img src="assets/hero2.svg" style={{ height: '500px' }} />
                     </div>
                 </div>
             </div>
-            <div className="h-64 container bg-white border rounded my-24 mx-auto md:p-8 relative md:-mt-12">
+            <div className="min-h-64 container bg-white border rounded my-24 mx-auto md:p-8 relative md:-mt-12">
                 {/* Section: Design Block */}
                 <section className="text-center h-full">
                     <div className="h-full grid lg:grid-cols-3 lg:gap-x-12 gap-8">
                         <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
-                            <div className="p-6 flex items-center justify-center">
+                            <div className="p-6 flex items-center flex-col justify-center">
                                 <div className='mb-4'>
-
+                                    <img src="assets/1.svg" />
                                 </div>
                                 <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
                                     Drop Off
@@ -38,9 +38,9 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
-                            <div className="p-6 flex items-center justify-center">
+                            <div className="p-6 flex flex-col items-center justify-center">
                                 <div className='mb-4'>
-
+                                    <img src="assets/2.svg" />
                                 </div>
                                 <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
                                     Pick Up
@@ -48,9 +48,9 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left rounded">
-                            <div className="p-6 flex items-center justify-center">
+                            <div className="p-6 flex flex-col items-center justify-center">
                                 <div className='mb-4'>
-
+                                    <img src="assets/3.svg" />
                                 </div>
                                 <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
                                     Reward
