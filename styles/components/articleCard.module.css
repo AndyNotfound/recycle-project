@@ -1,0 +1,37 @@
+.cardWrapper {
+  max-width: 521px;
+  box-sizing: border-box;
+  padding: 37px 41px 45px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardImage {
+  border-radius: 20px;
+  width: 438px;
+  height: 270px;
+  margin-bottom: 21px;
+}
+
+.cardTitle {
+  color: #363940;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* H4 */
+  font-size: 24px;
+  line-height: 28px; /* 116.667% */
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  color: #363940;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  line-height: 22px; /* 137.5% */
+  margin-bottom: 37px;
+}
+
+.cardAction {
+  color: #4fc6dc;
+  font-size: 18px;
+  line-height: normal;
+}
