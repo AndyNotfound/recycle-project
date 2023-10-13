@@ -1,5 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react"
-const navbar = () => {
+const navbarLogin = () => {
+    const { data: session } = useSession()
+
     return (
         <>
             <nav className="z-40 font-medium h-14 text-xs border flex-no-wrap fixed flex w-full items-center justify-between bg-white dark:bg-neutral-600 lg:flex-wrap lg:justify-start px-8">
@@ -80,10 +82,15 @@ const navbar = () => {
                             id="exampleSearch"
                             placeholder="Search Another" />
                         <div className="relative flex items-center">
-                            <a href="#" className="inline-block h-8 px-4 bg-rose-600 rounded mr-4 text-white leading-8">
-                                REGISTER
-                            </a>
-                            <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signIn()}>LOGIN</button>
+                            <button className="h-8 w-8 rounded-full overflow-hidden mr-4">
+                                {session.user.image ? (
+                                    <img src={session.user.image} alt="User Profile Image" />
+                                ) : (
+                                    <div className="bg-cyan-700 w-full h-full"></div>
+                                )}
+                            </button>
+
+                            <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signOut()}>SIGN OUT</button>
                         </div>
                     </div>
                 </div>
@@ -92,4 +99,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default navbarLogin

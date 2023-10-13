@@ -1,12 +1,15 @@
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/navbar';
+import NavbarLogin from '@/components/navbarLogin';
+import { useSession } from 'next-auth/react';
 import Hero from '@/components/hero'
 import Jenis_sampah from '@/components/jenis_sampah'
 import Solution from '@/components/solution'
 
 export default function Home() {
+  const { data: session } = useSession();
   return (
     <main>
-      <Navbar />
+      {session ? <NavbarLogin /> : <Navbar />}
       <Hero />
       <Jenis_sampah />
       <Solution />
