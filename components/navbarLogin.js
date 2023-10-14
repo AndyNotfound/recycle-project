@@ -1,4 +1,6 @@
 import { useSession, signIn, signOut } from "next-auth/react"
+import ListContainer from './ListContainer';
+
 const navbarLogin = () => {
     const { data: session } = useSession()
 
@@ -82,15 +84,7 @@ const navbarLogin = () => {
                             id="exampleSearch"
                             placeholder="Search Another" />
                         <div className="relative flex items-center">
-                            <button className="h-8 w-8 rounded-full overflow-hidden mr-4">
-                                {session.user.image ? (
-                                    <img src={session.user.image} alt="User Profile Image" />
-                                ) : (
-                                    <div className="bg-cyan-700 w-full h-full"></div>
-                                )}
-                            </button>
-
-                            <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signOut()}>SIGN OUT</button>
+                            <ListContainer />
                         </div>
                     </div>
                 </div>
