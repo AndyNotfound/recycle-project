@@ -1,10 +1,4 @@
-import ArticleCard from "@/components/blog/articleCard";
-import Navbar from "@/components/navbar";
-import { Poppins } from "@next/font/google";
-import styles from "@/styles/blog.module.css";
-import HighlightedArticle from "@/components/blog/highlightedArticle";
-
-const articles = [
+const blogs = [
   {
     id: 1,
     writer: "Dian Pratiwi",
@@ -63,28 +57,4 @@ const articles = [
   },
 ];
 
-const poppins = Poppins({
-  style: "normal",
-  weight: "700",
-  subsets: ["latin"],
-});
-
-const articleRendered = articles.map((item, index) => {
-  if (index === 0) {
-    return <HighlightedArticle className={styles.highlighted} key={index} props={item} />;
-  } else {
-    return <ArticleCard key={index} props={item} />;
-  }
-});
-
-export default function Blog() {
-  return (
-    <main>
-      <Navbar />
-      <h1 className={[poppins.className, styles.header].join(" ")}>
-        Berbagai Informasi menarik
-      </h1>
-      <div className={styles.articleWrapper}>{articleRendered}</div>
-    </main>
-  );
-}
+export default blogs;

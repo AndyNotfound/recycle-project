@@ -1,6 +1,6 @@
 import styles from "@/styles/components/highlightedArticle.module.css";
-import Link from "next/link";
 import { Poppins } from "@next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({
   style: "normal",
@@ -21,7 +21,7 @@ export default function HighlightedArticle({ props }) {
         </h4>
         <p className={[poppins.className, styles.cardDesc].join(" ")}>{description}</p>
         <Link
-          href={`/blog/details/${id}`}
+          href={`/blogs/detail/${id}`}
           className={[styles.cardAction, poppins.className].join(" ")}
         >
           Baca Selengkapnya

@@ -1,7 +1,7 @@
 import styles from "@/styles/components/articleCard.module.css";
+import { Rubik, Poppins } from "@next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { Rubik, Poppins } from "@next/font/google";
 
 const rubik = Rubik({
   style: "normal",
@@ -34,7 +34,7 @@ export default function ArticleCard({ props }) {
           {description}{" "}
         </p>
         <Link
-          href={`/blog/details/${id}`}
+          href={`/blogs/detail/${id}`}
           className={[styles.cardAction, poppins.className].join(" ")}
         >
           Baca Selengkapnya
