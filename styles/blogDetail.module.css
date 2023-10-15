@@ -1,0 +1,35 @@
+.articleDetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.headerContainer {
+  padding-top: 120px;
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.header {
+  color: #363940;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.thumbnail {
+  border-radius: 20px;
+  width: 1112px;
+  height: 455px;
+  object-fit: cover;
+}
+
+.article {
+  width: 1055px;
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+}
