@@ -61,13 +61,13 @@ const navbar = () => {
                                     href="/blogs"
                                     data-te-nav-link-ref=""
                                 >
-                                    BLOGS
+                                    BLOG
                                 </a>
                             </li>
                             <li className="mb-4 lg:mb-0 lg:pr-0" data-te-nav-item-ref="">
                                 <a
                                     className="text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:pl-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                                    href="#"
+                                    href="/kontak_kami"
                                     data-te-nav-link-ref="contact"
                                 >
                                     KONTAK KAMI
@@ -80,7 +80,7 @@ const navbar = () => {
                             id="exampleSearch"
                             placeholder="Search Another" />
                         <div className="relative flex items-center">
-                            <a href="#" className="inline-block h-8 px-4 bg-rose-600 rounded mr-4 text-white leading-8">
+                            <a href="#" className="inline-block h-8 px-4 bg-rose-600 rounded mr-4 text-white leading-8" onClick={() => signIn()}>
                                 REGISTER
                             </a>
                             <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signIn()}>LOGIN</button>

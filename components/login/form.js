@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useSession, signIn, signOut } from "next-auth/react"
+
 const form = () => {
     return (
         <div className='h-screen'>
@@ -75,34 +77,33 @@ const form = () => {
                                 </p>
                             </div>
                             {/*Sign in section*/}
-                            <div className="flex flex-row items-center justify-center">
-                                {/* Google*/}
+                            {/* <div className="flex flex-row items-center justify-center">
                                 <button
                                     type="button"
                                     data-te-ripple-init=""
                                     data-te-ripple-color="light"
                                     className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                                 >
-                                    {/* Google */}
                                     <img
                                         src="assets/google.svg"
                                         className="mx-auto h-7 w-7"
                                     />
                                 </button>
-                                {/* Google*/}
                                 <button
                                     type="button"
                                     data-te-ripple-init=""
                                     data-te-ripple-color="light"
                                     className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                                 >
-                                    {/* Google */}
                                     <img
                                         src="assets/facebook.svg"
                                         className="mx-auto h-8 w-8"
                                     />
                                 </button>
 
+                            </div> */}
+                            <div className="flex flex-row items-center justify-center">
+                                <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signIn()}>Anohter...</button>
                             </div>
                             {/* Register link */}
                             <p className="mb-0 mt-10 pt-1 text-sm font-semibold text-center">
