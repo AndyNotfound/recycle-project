@@ -1,0 +1,55 @@
+.cardContainer {
+  grid-column-start: 0;
+  grid-column-end: span 2; 
+  width: 1112px;
+  height: 368.262px;
+  border-radius: 25px;
+  background: #2580b5;
+  margin: 46px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 170px;
+}
+
+.cardWrapper {
+  padding: 29px 49px 25px;
+  width: 904.187px;
+  min-height: 263.196px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: -64px;
+}
+
+.cardDate {
+  color: #23262f;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.cardDesc {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.cardAction {
+  color: #4fc6dc;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration-line: underline;
+}
