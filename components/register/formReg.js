@@ -1,6 +1,6 @@
 import React from 'react'
 
-const form = () => {
+const formReg = () => {
     return (
         <div className='h-screen'>
             <div class="grid grid-cols-1 md:grid-cols-2">
@@ -13,8 +13,24 @@ const form = () => {
                 </div>
                 <div className='bg-white h-screen py-40 flex justify-center items-center'>
                     <div className='w-full'>
-                        <h1 className="px-12 text-3xl font-semibold mb-4">Log In</h1>
+                        <h1 className="px-12 text-3xl font-semibold mb-4  mt-40">Daftar Akun</h1>
                         <form className='px-12'>
+                                {/*Name input*/}
+                                <div className="mb-4">
+                                    <label
+                                       htmlFor="name" className="block text-base text-gray-600"
+                                    >
+                                        Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                        autoComplete="off"
+                                    />
+                                    
+                                </div>
                             {/* Email Input */}
                             <div className="mb-4">
                                 <label htmlFor="email" className="block text-base text-gray-600">
@@ -27,6 +43,21 @@ const form = () => {
                                     className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                                     autoComplete="off"
                                 />
+                            </div>
+                            {/*Number input*/}
+                            <div className="mb-4">
+                                    <label
+                                       htmlFor="name" className="block text-base text-gray-600"
+                                    >
+                                        Nomor Telepon
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                        autoComplete="off"
+                                    />
                             </div>
                             {/* Password Input */}
                             <div className="mb-4">
@@ -56,7 +87,7 @@ const form = () => {
                                     data-te-ripple-init=""
                                     data-te-ripple-color="light"
                                 >
-                                    Login
+                                    Daftar
                                 </button>
 
 
@@ -99,12 +130,12 @@ const form = () => {
                             </div>
                             {/* Register link */}
                             <p className="mb-0 mt-10 pt-1 text-sm font-semibold text-center">
-                                Don't have an account?
+                                Already have a account?
                                 <a
                                     href="#!"
                                     className="text-blue-400 transition duration-150 ease-in-out hover:text-blue-500 focus:text-blue-500 active:text-blue-400"
                                 >
-                                    Register
+                                    Log In
                                 </a>
                             </p>
                         </form>
@@ -115,4 +146,4 @@ const form = () => {
     )
 }
 
-export default form
+export default formReg
