@@ -3,7 +3,7 @@ import React from 'react'
 const formReg = () => {
     return (
         <div className='h-screen'>
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className='bg-cyan-500 h-screen flex justify-center hidden md:flex'>
                     <img
                         src="assets/logo.svg"
@@ -13,7 +13,7 @@ const formReg = () => {
                 </div>
                 <div className='bg-white h-screen py-40 flex justify-center items-center'>
                     <div className='w-full'>
-                        <h1 className="px-12 text-3xl font-semibold mb-4  mt-40">Daftar Akun</h1>
+                        <h1 className="px-12 text-3xl font-semibold mb-4 ">Daftar Akun</h1>
                         <form className='px-12'>
                                 {/*Name input*/}
                                 <div className="mb-4">
@@ -37,7 +37,7 @@ const formReg = () => {
                                     Alamat Email
                                 </label>
                                 <input
-                                    type="text"
+                                    type="email"
                                     id="email"
                                     name="email"
                                     className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
@@ -47,14 +47,14 @@ const formReg = () => {
                             {/*Number input*/}
                             <div className="mb-4">
                                     <label
-                                       htmlFor="name" className="block text-base text-gray-600"
+                                       htmlFor="telepon" className="block text-base text-gray-600"
                                     >
                                         Nomor Telepon
                                     </label>
                                     <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
+                                        type="tel"
+                                        id="telepon"
+                                        name="telepon"
                                         className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                                         autoComplete="off"
                                     />
@@ -74,12 +74,7 @@ const formReg = () => {
                                     />
                                 </div>
                             </div>
-
-                            <div className="mb-6 flex items-center justify-end">
-                                {/*Forgot password link*/}
-                                <a href="#!">Forgot password?</a>
-                            </div>
-                            {/* Login button */}
+                            {/* daftar button */}
                             <div className="text-center lg:text-left flex justify-center w-full">
                                 <button
                                     type="button"
@@ -90,42 +85,6 @@ const formReg = () => {
                                     Daftar
                                 </button>
 
-
-                            </div>
-                            {/* Separator between social media sign in and email/password sign in */}
-                            <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
-                                <p className="mx-4 mb-0 text-center font-semibold dark:text-white">
-                                    OR
-                                </p>
-                            </div>
-                            {/*Sign in section*/}
-                            <div className="flex flex-row items-center justify-center">
-                                {/* Google*/}
-                                <button
-                                    type="button"
-                                    data-te-ripple-init=""
-                                    data-te-ripple-color="light"
-                                    className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                >
-                                    {/* Google */}
-                                    <img
-                                        src="assets/google.svg"
-                                        className="mx-auto h-7 w-7"
-                                    />
-                                </button>
-                                {/*Github*/}
-                                <button
-                                    type="button"
-                                    data-te-ripple-init=""
-                                    data-te-ripple-color="light"
-                                    className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                >
-                                    {/*Github*/}
-                                    <img
-                                        src="assets/github.svg"
-                                        className="mx-auto h-8 w-8"
-                                    />
-                                </button>
 
                             </div>
                             {/* Register link */}
