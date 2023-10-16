@@ -1,3 +1,6 @@
+import Anchor from "./anchor"
+import styles from '@/styles/home.module.css'
+
 const Hero = () => {
     return (
         <>
@@ -23,45 +26,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="min-h-64 container bg-white border rounded my-24 mx-auto md:p-8 relative md:-mt-12">
-                {/* Section: Design Block */}
-                <section className="text-center h-full">
-                    <div className="h-full grid lg:grid-cols-3 lg:gap-x-12 gap-8">
-                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
-                            <div className="p-6 flex items-center flex-col justify-center">
-                                <div className='mb-4'>
-                                    <img src="assets/1.svg" />
-                                </div>
-                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                                    Drop Off
-                                </h5>
-                            </div>
-                        </div>
-                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left">
-                            <div className="p-6 flex flex-col items-center justify-center">
-                                <div className='mb-4'>
-                                    <img src="assets/2.svg" />
-                                </div>
-                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                                    Pick Up
-                                </h5>
-                            </div>
-                        </div>
-                        <div className="border-solid border-2 flex justify-center rounded-lg bg-white dark:bg-neutral-700 text-left rounded">
-                            <div className="p-6 flex flex-col items-center justify-center">
-                                <div className='mb-4'>
-                                    <img src="assets/3.svg" />
-                                </div>
-                                <h5 className="text-center text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                                    Reward
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* Section: Design Block */}
-            </div>
-            {/* Container for demo purpose */}
+            <Anchor additionalStyles={styles.anchor}/>
         </>
     )
 }

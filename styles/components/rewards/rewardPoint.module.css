@@ -1,0 +1,52 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  min-height: 187px;
+}
+
+.cardImageContainer {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2580b5;
+}
+
+.voucher {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.voucherDetailContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-top: 0;
+  padding: 12px;
+  align-items: center;
+}
+
+.voucherPoint {
+  color: #1caad9;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
+
+.voucherExchange {
+  border-radius: 5px;
+  background-color: #1caad9;
+  padding: 5px 35px;
+  color: white;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}
