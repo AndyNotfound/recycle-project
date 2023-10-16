@@ -1,7 +1,7 @@
 import styles from "@/styles/components/articleCard.module.css";
+import { Rubik, Poppins } from "@next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { Rubik, Poppins } from "@next/font/google";
 
 const rubik = Rubik({
   style: "normal",
@@ -15,8 +15,8 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-export default function ArticleCard({props}) {
-  const { thumbnail, title, desc, actionLink } = props;
+export default function ArticleCard({ props }) {
+  const { id, thumbnail, title, description } = props;
   return (
     <div className={styles.cardWrapper}>
       <Image
@@ -31,10 +31,10 @@ export default function ArticleCard({props}) {
           {title}
         </h4>
         <p className={[styles.cardDescription, poppins.className].join(" ")}>
-          {desc}{" "}
+          {description}{" "}
         </p>
         <Link
-          href={actionLink}
+          href={`/blogs/detail/${id}`}
           className={[styles.cardAction, poppins.className].join(" ")}
         >
           Baca Selengkapnya
