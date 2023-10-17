@@ -2,7 +2,7 @@ import React from 'react'
 
 const personal = () => {
     return (
-        <div className='bg-white pt-28 px-6'>
+        <div className='bg-white pt-28 px-6 mb-16'>
             <h1 className="text-2xl font-semibold mb-8 text-center">Personal Info</h1>
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="flex justify-center items-center">

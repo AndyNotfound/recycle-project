@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <div className='bg-white pt-32'>
             <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="ml-12 mb-8">
+                <div className="ml-12 mb-10">
                     <h1 className="text-2xl font-semibold mb-4 ">Kontak Kami</h1>
                     <div className="flex justify-start items-center mb-3">
                         <img src="assets/maps.svg" className="mr-2 h-10"></img>
