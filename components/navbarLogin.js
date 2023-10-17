@@ -32,15 +32,15 @@ const navbarLogin = () => {
                             </svg>
                         </span>
                     </button>
-                    <p className="lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
+                    <div className="bg-cyan-500 max-h-full rounded-full">
                         <a
                             className="text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-2xl"
                             href="/"
                             data-te-nav-link-ref=""
                         >
-                            RECYCLE
+                            <img src="/assets/logo.svg" alt="Logo" className="h-8" />
                         </a>
-                    </p>
+                    </div>
                     <div
                         className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
                         id="navbarSupportedContent1"
@@ -53,7 +53,7 @@ const navbarLogin = () => {
                             <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
                                 <a
                                     className="text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
-                                    href="#"
+                                    href="/layanan"
                                     data-te-nav-link-ref="/service"
                                 >
                                     LAYANAN
