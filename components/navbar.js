@@ -76,7 +76,7 @@ const navbar = () => {
                             id="exampleSearch"
                             placeholder="Search Another" />
                         <div className="relative flex items-center">
-                            <a href="#" className="inline-block h-8 px-4 bg-rose-600 rounded mr-4 text-white leading-8" onClick={() => signIn()}>
+                            <a href="/register" className="inline-block h-8 px-4 bg-rose-600 rounded mr-4 text-white leading-8">
                                 REGISTER
                             </a>
                             <button className="inline-block h-8 px-4 bg-cyan-400 rounded text-white leading-8" onClick={() => signIn()}>LOGIN</button>

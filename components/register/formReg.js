@@ -1,6 +1,9 @@
 import React from 'react'
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 const formReg = () => {
+    const { data: session } = useSession();
     return (
         <div className='h-screen'>
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -15,22 +18,22 @@ const formReg = () => {
                     <div className='w-full'>
                         <h1 className="px-12 text-3xl font-semibold mb-4 ">Daftar Akun</h1>
                         <form className='px-12'>
-                                {/*Name input*/}
-                                <div className="mb-4">
-                                    <label
-                                       htmlFor="name" className="block text-base text-gray-600"
-                                    >
-                                        Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-                                        autoComplete="off"
-                                    />
-                                    
-                                </div>
+                            {/*Name input*/}
+                            <div className="mb-4">
+                                <label
+                                    htmlFor="name" className="block text-base text-gray-600"
+                                >
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                    autoComplete="off"
+                                />
+
+                            </div>
                             {/* Email Input */}
                             <div className="mb-4">
                                 <label htmlFor="email" className="block text-base text-gray-600">
@@ -46,18 +49,18 @@ const formReg = () => {
                             </div>
                             {/*Number input*/}
                             <div className="mb-4">
-                                    <label
-                                       htmlFor="telepon" className="block text-base text-gray-600"
-                                    >
-                                        Nomor Telepon
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        id="telepon"
-                                        name="telepon"
-                                        className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-                                        autoComplete="off"
-                                    />
+                                <label
+                                    htmlFor="telepon" className="block text-base text-gray-600"
+                                >
+                                    Nomor Telepon
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="telepon"
+                                    name="telepon"
+                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                    autoComplete="off"
+                                />
                             </div>
                             {/* Password Input */}
                             <div className="mb-4">
@@ -93,7 +96,7 @@ const formReg = () => {
                                 <a
                                     href="#!"
                                     className="text-blue-400 transition duration-150 ease-in-out hover:text-blue-500 focus:text-blue-500 active:text-blue-400"
-                                >
+                                    onClick={() => signIn()}>
                                     Log In
                                 </a>
                             </p>
