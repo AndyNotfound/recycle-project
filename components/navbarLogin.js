@@ -33,13 +33,13 @@ const navbarLogin = () => {
                             </svg>
                         </span>
                     </button>
-                    <div className="bg-cyan-500 max-h-full rounded-full">
+                    <div className="">
                         <a
                             className="text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 text-2xl"
                             href="/"
                             data-te-nav-link-ref=""
                         >
-                            <img src="/assets/logo.svg" alt="Logo" className="h-8" />
+                            <img src="/assets/logo1.png" alt="Logo" className="h-14" />
                         </a>
                     </div>
                     <div
