@@ -56,7 +56,7 @@ const footer = () => {
                     </div>
                 </div>
                 <div className='grid justify-center pt-6 lg:justify-between'>
-                    <div className='border border-0 flex justify-start items-center mb-7 ml-28 mt-10'>
+                    <div className='border border-0 flex justify-start items-center mb-8 ml-28 mt-10'>
                         <img src="assets/language.svg" className="mr-2 h-6"></img>
                         <select className='bg-slate-200'>
                             <option value={1}>Indonesia</option>

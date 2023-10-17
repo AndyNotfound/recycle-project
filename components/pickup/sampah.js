@@ -242,12 +242,31 @@ function Card(props) {
                         </div>
                     </div>
                     <div>
-                        <div> 
+                        <div>
                             <p>Upload Gambar</p>
                             <input type='file'></input>
                         </div>
                         <div>
                             <p>Informasi Penjemputan</p>
+                            <div>
+                                <label>
+                                    Alamat
+                                </label>
+                                <textarea
+                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                    autoComplete="off"
+                                ></textarea>
+                            </div>
+                            <div>
+                                <label>Tanggal dan Jam</label>
+                            </div>
+                            <div>
+                                <label>Informasi Tambahan</label>
+                                <textarea
+                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+                                    autoComplete="off"
+                                ></textarea>
+                            </div>
                         </div>
                     </div>
                 </section>
