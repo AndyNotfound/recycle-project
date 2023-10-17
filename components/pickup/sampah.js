@@ -10,20 +10,7 @@ function Card(props) {
                     <div className='grid grid-cols-4 gap-4'>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
+                                <img className='w-12' src='/assets/kertas.svg' />
                                 <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
@@ -39,21 +26,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/plastik.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Plastik</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -68,21 +42,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/aluminium.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Aluminium</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -97,21 +58,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/kaca.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kaca</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -126,21 +74,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/elektronik.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Elektronik</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -155,21 +90,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/besi.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 text-center">Besi dan Logam</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -184,21 +106,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/kompos.svg' />
+                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Elektronik</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -213,21 +122,8 @@ function Card(props) {
                         </div>
                         <div className="rounded-md bg-primary-100 p-4 text-primary flex items-center  min-w-min">
                             <div className='flex flex-col items-center w-2/5'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={2}
-                                    stroke="currentColor"
-                                    className="h-6 w-6"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                                    />
-                                </svg>
-                                <h5 className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Kertas</h5>
+                                <img className='w-12' src='/assets/limbah.svg' />
+                                <h5 className="text-center text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Limbah</h5>
                             </div>
                             <div className=' flex justify-center max-h-10 items-center w-3/5'>
                                 <button
@@ -241,33 +137,20 @@ function Card(props) {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <p>Upload Gambar</p>
+                    <div className='px-12 mt-16'>
+                        <form className=''>
+                            <p className='text-xl my-4'>Upload Gambar</p>
                             <input type='file'></input>
-                        </div>
-                        <div>
-                            <p>Informasi Penjemputan</p>
-                            <div>
-                                <label>
-                                    Alamat
-                                </label>
-                                <textarea
-                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-                                    autoComplete="off"
-                                ></textarea>
-                            </div>
-                            <div>
-                                <label>Tanggal dan Jam</label>
-                            </div>
-                            <div>
-                                <label>Informasi Tambahan</label>
-                                <textarea
-                                    className="w-full border-solid border-2 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-                                    autoComplete="off"
-                                ></textarea>
-                            </div>
-                        </div>
+                            <p className='text-xl my-4'>Informasi Penjemputan</p>
+                            <input className='border' type='text'></input>
+                            <p className='my-4'>Alamat</p>
+                            <input className='border' type='text'></input>
+                            <p className='my-4'>Tanggal dan Jam</p>
+                            <input type='date'></input>
+                            <p className='my-4'>Informasi Tambahan</p>
+                            <input className='border' type='text'></input> <br></br>
+                            <button className='my-4 p-2 rounded bg-cyan-500 text-white'>Pesan Sekarang</button>
+                        </form>
                     </div>
                 </section>
             </div>
