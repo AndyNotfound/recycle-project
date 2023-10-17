@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar'
 import { useSession } from 'next-auth/react';
 import Personal from '@/components/personal';
+import NavbarLogin from '@/components/navbarLogin';
 
 export default function Pickup() {
     const { data: session } = useSession();
