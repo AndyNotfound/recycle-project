@@ -1,44 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class MapComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.mapRef = React.createRef();
-  }
-
-  componentDidMount() {
-    // Load the Google Maps JavaScript API
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap`;
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    // Initialize the map once the Google Maps API is loaded
-    script.onload = () => {
-      this.initMap();
-    };
-  }
-
-  initMap() {
-    const mapOptions = {
-      center: { lat: 51.5074, lng: 0.1278 }, // Contoh: Koordinat tengah untuk London
-      zoom: 12, // Tingkat zoom
-    };
-
-    const map = new window.google.maps.Map(this.mapRef.current, mapOptions);
-
-    // Anda dapat menambahkan marker atau layer lainnya ke peta di sini
-  }
-
-  render() {
-    return (
-      <div
-        ref={this.mapRef}
-        style={{ width: '100%', height: '400px' }}
+const maps = () => {
+  return (
+    <div className='w-full mt-12 flex justify-center'>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32660010.756335795!2d95.84273815131432!3d-2.2222474753839583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1697458081904!5m2!1sid!2sid"
+        width={900}
+        height={500}
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
       />
-    );
-  }
+    </div>
+  )
 }
 
-export default MapComponent;
+export default maps
