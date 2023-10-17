@@ -1,4 +1,4 @@
-import styles from "@/styles/components/highlightedArticle.module.css";
+import styles from "@/styles/components/blogs/highlightedArticle.module.css";
 import { Poppins } from "@next/font/google";
 import Link from "next/link";
 

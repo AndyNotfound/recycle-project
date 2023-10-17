@@ -1,0 +1,34 @@
+.anchorContainer {
+  width: 1224px;
+  height: 454.927px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  margin: auto;
+  padding: 116px 56px 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.15);
+  column-gap: 35px;
+}
+
+.anchorItem {
+  width: 352px;
+  height: 266px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border: 1px solid #b1b5c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+}
+
+.anchorLink {
+  color: #141416;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px; /* 150% */
+}

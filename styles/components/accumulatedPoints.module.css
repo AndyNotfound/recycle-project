@@ -1,0 +1,27 @@
+.accumPointsContainer {
+  min-width: 359px;
+  padding: 24px 66px;
+  border-radius: 4px;
+  border: 1px solid var(--Divider, rgba(27, 27, 27, 0.15));
+  background: #fff;
+  box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.accumPoints {
+  color: #1b1b1b;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130.02%; /* 31.205px */
+}
+
+.accumPointsValue {
+  margin-left: 34px;
+  color: #01c087;
+  font-family: ABeeZee;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130.02%; /* 44.207px */
+  letter-spacing: 0.25px;
+}

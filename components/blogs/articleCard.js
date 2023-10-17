@@ -1,4 +1,4 @@
-import styles from "@/styles/components/articleCard.module.css";
+import styles from "@/styles/components/blogs/articleCard.module.css";
 import { Rubik, Poppins } from "@next/font/google";
 import Image from "next/image";
 import Link from "next/link";
