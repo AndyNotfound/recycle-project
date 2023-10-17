@@ -25,15 +25,20 @@ const ListContainer = () => {
 
             {isVisible && (
                 <div className="absolute w-24 -left-16 top-12 p-2 bg-white border border-gray-300 rounded">
-                    <ul className="flex flex-col justify-center items-center">
+                    <ul className="flex flex-col justify-center items-start">
                         <li className="py-2">
-                            <a className="cursor-pointer text-blue-500">
-                                PROFILE
+                            <a href="/personal_info" className="cursor-pointer text-blue-500">
+                                Personal Info
+                            </a>
+                        </li>
+                        <li className="py-2">
+                            <a href="/poin" className="cursor-pointer text-blue-500">
+                                Poin
                             </a>
                         </li>
                         <li className="py-2">
                             <a onClick={() => signOut()} className="cursor-pointer text-blue-500">
-                                SIGN OUT
+                                Log Out
                             </a>
                         </li>
                     </ul>
