@@ -23,19 +23,19 @@ const ListContainer = () => {
                     <ul className="flex flex-col justify-center items-start">
                         <li className="py-2 flex">
                             <img src="/assets/listlay1.svg" className="pr-2" />
-                            <a href="" className="cursor-pointer text-blue-500">
+                            <a href="/pickups" className="cursor-pointer text-blue-500">
                                 Pick Up
                             </a>
                         </li>
                         <li className="py-2 flex">
                             <img src="/assets/listlay2.svg" className="pr-2" />
-                            <a href="" className="cursor-pointer text-blue-500">
+                            <a href="/dropoffs" className="cursor-pointer text-blue-500">
                                 Drop Off
                             </a>
                         </li>
                         <li className="py-2 flex">
                             <img src="/assets/listlay3.svg" className="pr-2" />
-                            <a href="" className="cursor-pointer text-blue-500">
+                            <a href="/rewards" className="cursor-pointer text-blue-500">
                                 Reward
                             </a>
                         </li>
