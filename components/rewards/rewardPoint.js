@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/components/rewards/rewardPoint.module.css";
 import { Poppins } from "@next/font/google";
+import PopupReward from "../popupReward";
 
 const poppins = Poppins({
   style: "normal",
@@ -9,13 +10,13 @@ const poppins = Poppins({
 });
 
 export default function RewardPoint({ props }) {
-  const { voucherType, price } = props;
+  const { voucherType, price, url } = props;
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.cardImageContainer}>
         <Image
           className={styles.imageContainer}
-          src="/assets/rewards.png"
+          src={url}
           alt=""
           width="100"
           height="100"
@@ -28,11 +29,7 @@ export default function RewardPoint({ props }) {
         <p className={[poppins.className, styles.voucherPoint].join(" ")}>
           {price}
         </p>
-        <button
-          className={[poppins.className, styles.voucherExchange].join(" ")}
-        >
-          Tukar
-        </button>
+        <PopupReward />
       </div>
     </div>
   );

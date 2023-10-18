@@ -8,6 +8,7 @@ import RewardsHero from "@/components/rewards/rewardsHero";
 import AccumulatedPoints from "@/components/accumulatedPoints";
 import Anchor from "@/components/anchor";
 import voucher from "@/data/voucher";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   weight: "500",
@@ -37,6 +38,7 @@ export default function RewardsPage() {
             return <RewardPoint key={index} props={item} />;
           })}
         </div>
+        <Footer />
       </div>
     );
   } else {
