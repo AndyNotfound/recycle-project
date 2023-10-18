@@ -4,7 +4,7 @@ const blogs = [
     writer: "Dian Pratiwi",
     datePosted: "12 Oktober 2023",
     title: "Pentingnya Daur Ulang: Upaya Mengelola Limbah Secara Bijak",
-    thumbnail: "/assets/0.jpeg",
+    thumbnail: "/assets/46.jpg",
     description:
       "Daur ulang adalah salah satu cara terbaik dalam mengelola sampah dan menjaga lingkungan. Artikel ini akan membahas pentingnya daur ulang dan bagaimana kita semua dapat berkontribusi.",
     content:
