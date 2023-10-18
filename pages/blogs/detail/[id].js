@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 import Navbar from "@/components/navbar";
 import NavbarLogin from "@/components/navbarLogin";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   style: "normal",
@@ -44,6 +45,7 @@ export default function BlogDetail() {
           {content}
         </p>
       </div>
+      <Footer />
     </>
   );
 }

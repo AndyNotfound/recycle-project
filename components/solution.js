@@ -3,13 +3,13 @@ import React from 'react'
 const Solution = () => {
     return (
         <>
-            <div className="bg-white w-screen md:p-6">
+            <div className="bg-white w-screen -z-50">
                 <section className="my-24">
                     <h2 className="text-5xl text-blue-500 font-bold leading-tight tracking-tight text-center">
                         SOLUSI KAMI
                     </h2>
                     <p className='mb-24 text-center'>Telusuri Ragam Sampah yang Kami Proses ulang.</p>
-                    <div className="container bg-white rounded my-24 mx-auto md:p-8 relative md:-mt-24">
+                    <div className="container bg-white rounded my-24 mx-auto md:p-8 md:-mt-24">
                         <section className="text-center">
                             <div className="grid lg:grid-cols-3 lg:gap-x-12 gap-8">
                                 <div className="block rounded-lg bg-white shadow-md dark:bg-neutral-700 text-left p-6">

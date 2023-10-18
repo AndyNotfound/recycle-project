@@ -4,6 +4,7 @@ import NavbarLogin from '@/components/navbarLogin';
 import Solution from '@/components/solution'
 import { useSession } from 'next-auth/react';
 import Card from '@/components/pickup/sampah'
+import Footer from '@/components/footer';
 
 export default function Pickup() {
     const { data: session } = useSession();
@@ -13,6 +14,7 @@ export default function Pickup() {
             <Hero />
             <Card />
             <Solution />
+            <Footer />
         </main >
     )
 }

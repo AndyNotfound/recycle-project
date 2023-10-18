@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import NavbarLogin from "@/components/navbarLogin";
 import ArticleCard from "@/components/blogs/articleCard";
 import HighlightedArticle from "@/components/blogs/highlightedArticle";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   style: "normal",
@@ -36,6 +37,7 @@ export default function Blogs() {
         Berbagai Informasi menarik
       </h1>
       <div className={styles.articleWrapper}>{articleRendered}</div>
+      <Footer/>
     </main>
   );
 }
